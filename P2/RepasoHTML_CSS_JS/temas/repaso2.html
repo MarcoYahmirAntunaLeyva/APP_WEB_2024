@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso 2</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Estoy en el archivo del repaso 2</h1>
+    <hr>
+    <p>
+        <!-- Crear un enlace a traves de una imagen que envie el control al archivo repaso html -->
+         <center>
+            <P>
+            <a href="repaso.html"><img src="img/repaso.ico" alt="Hipervinculo a Repaso" title="Hipervinculo a repaso"></a>
+            
+
+
+         </center>
+         </p>
+
+         <h2>Incluir un audio</h2>
+         <audio src="audio/Earth, Wind & Fire - September.mp3" controls autoplay muted></audio>
+
+         <h2>Incluir Video</h2>
+         <video src="video/video playa corto mp4 - Edgar Crampton (720p60, h264, youtube).mp4" controls autoplay muted></video>
+
+         <h2>Incluir un video de youtube</h2>
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/ELSm-G201Ls?si=jXfqWC5n7px9L6lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <hr>
+         <h2>Incluir un Mapa de googe maps</h2>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.1580450423767!2d-104.61742415585572!3d23.99019552518906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb833980d018d%3A0x735210d1bc20e6ad!2sUniversidad%20Tecnol%C3%B3gica%20de%20Durango%20BIS!5e0!3m2!1ses-419!2smx!4v1727199614926!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main>
+        <form action="https://www.google.com/" method="POST">
+            <!-- Hay dos maneras de utilizar el Label y input-->
+            <!-- 1er opcion -->
+            <label for="name1">Nombre:
+                <input type="text" id="name1" name="nombre" placeholder="Escribir tu Nombre"  required  autofocus>
+            </label>
+
+            <!-- 2da opcion RECOMENDADA -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="nombre"  placeholder="Escribir tu Nombre"  required >
+
+
+            
+            <input type="submit" value="Enviar Ok" name="enviar" id="guardar">
+
+           
+            <label for="age">Edad:</label>
+            <input type="number" value="6" min="5" max="13"  >
+
+             
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" name="pass" >
+
+            <h3>otros tipos de input</h3>
+
+            
+            <legend>Seleccione el Sexo: </legend>
+            <label for="man">Hombre</label>
+            <input type="radio" id="man" name="sex" value="h" >
+            <label for="wom">Mujer</label>
+            <input type="radio" id="wom" name="sex" value="m" checked>
+            <label for="otr">Otro</label>
+            <input type="radio" id="otr" name="sex" value="o" >
+          
+ 
+            <legend>Seleccione el pasatiempos: </legend>
+            <input type="checkbox" id="pasatiempo1" name="pasatiempos" value="leer">
+            <label for="pasatiempo1">Leer</label>
+            <input type="checkbox" id="pasatiempo2" name="pasatiempos" value="caminar">
+            <label for="pasatiempo2">Caminar</label>
+            <input type="checkbox" id="pasatiempo3" name="pasatiempos" value="jugar">
+            <label for="pasatiempo3">Jugar</label>
+            <input type="checkbox" id="pasatiempo4" name="pasatiempos" value="nada" checked>
+            <label for="pasatiempo4">Nada</label>
+
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha">
+
+            <label for="hora">Hora</label>
+            <input type="time" id="hora">
+
+            <input type="month">
+            <input type="week">
+            <br>
+
+            <input type="email" required>
+<br>
+            <input type="file">
+<br>
+            <input type="range" min="0" max="100" step="10">
+
+            <input type="serch">
+
+            <input type="tel">
+
+
+            <h3>Implementar Datalist</h3>
+
+            <label for="browsers">Navegadores</label>
+            <input type="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="chrome">
+                <option value="edge">
+                <option value="firefox">
+                <option value="opera">
+            </datalist>
+
+
+            <h3>Implementar Select</h3>
+
+            <select name="navegadores" id="navega" multiple>
+                <option value="ninguno" >Seleccionar ...</option>
+                <option value="chrome" selected>Chrome</option>
+                <option value="edge" selected>Edge</option>
+                <option value="firefox">Firefox</option>
+            </select>
+
+
+            <select name="navegadores" id="navega" >
+                <option value="ninguno" >Seleccionar ...</option>
+                <option value="chrome" selected>Chrome</option>
+                <option value="edge">Edge</option>
+                <option value="firefox" >Firefox</option>
+            </select>
+
+
+            <h3>Implementar Textarea</h3>
+
+            <textarea name="observacion" style="resize:none" id="observa" cols="30" rows="10" placeholder="Ingresar tus observaciones" ></textarea>
+
+
+
+            <h3>Formas de Enviar información</h3>
+
+            <input type="submit" value="Aceptar" name="empleados1">
+            <input type="image" src="img/enviar.jpeg" width="200" height="150">
+            <button id="empleados1">Enviar</button>
+            <input type="button" value="Enviar">
+
+            <input type="reset" value="Resetear formulario">
+
+        </form>
+    </main>
+
+    <section>
+        <h3>Formulario en el cual se utilice un Fieldset</h3>
+        <form action="">
+            <fieldset class="">
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" placeholder="Nombre" disabled >
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" placeholder="Hernandez" required autofocus readonly>
+                <label for="age">Edad:</label>
+                <input type="number" disabled value="23">
+                <input type="submit">
+                
+            </fieldset>
+            <fieldset class="">
+                <legend>Datos Trabajo</legend>
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" placeholder="Nombre" readonly>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" required autofocus >
+                <label for="age">Edad:</label>
+                <input type="number" disabled value="23">
+                <input type="submit">
+                
+            </fieldset>
+           
+        </form>
+
+    </section>
+</body>
+</html>
