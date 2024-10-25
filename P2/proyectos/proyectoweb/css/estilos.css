@@ -1,0 +1,217 @@
+/* Aplicar estilos generales  */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aplicar los estilos del Header */
+
+#inicio{
+    background-image: url(../img/fondo1.jpg);
+    height: 100vmin;
+    background-size: cover;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1920px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu p{
+    display: inline;
+    font-size: 2vmax;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lista{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5vw;
+}
+
+.lista li{
+    margin-left: 1.5vw;
+    justify-content: center;
+}
+
+.btn-menu{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.btn-menu:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 1.6vw;
+    border: 1px solid black;
+    text-decoration: underline;
+}
+
+.btn-menu:active{
+    color: #f0ea328a;
+}
+
+.titular{
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.titular h1{
+    font-size: 4vw;
+    margin: 0;
+}
+
+.titular h2{
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+}
+
+.btn{
+    background-color: #5db8f8;
+    padding: 2vw;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    font-size: 1.1vw;
+}
+
+.btn:active{
+    background-color: #f0ea328a;
+    color: black;
+}
+
+/* Aplicar estilos a la seccion "sobremi" */
+.contenedor h3{
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor-sobremi img{
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px #5db8f8 ;
+    width: 40vw;
+
+}
+
+.contenedor-sobremi img:hover{
+    border-radius: 20%;
+}
+
+.contenedor-parrafo-y-boton{
+    width: 45%;
+}
+
+.contenedor-parrafo-y-boton p{
+    font-size: 1.5vw;
+    color: black;
+    text-align: justify;
+    margin-bottom: 2rem;
+
+}
+
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.email{
+    color: blue;
+    text-decoration: underline;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.email:hover{
+    color: #5db8f8;
+    font-size: 2.1vw;
+    font-weight: normal;
+}
+
+.email:active{
+    color: #5db8f8;
+}
+
+
+
+/* APLICAR ESTILOS A LA SECCION "SERVICIOS" */
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 23%;
+    padding: 2vw;
+    border-radius: 20%;
+    /* border: 1px solid black; */
+    margin-bottom: 2vw;
+    color: white;
+}
+
+.servicio p{
+    font-size: 2.5vmin;
+}
+
+.servicio h4{
+    font-size: 3vmin;
+}
+
+.azul{
+    background-color: cornflowerblue;
+}
+
+.celeste{
+    background-color: #5db8f8;
+}
+
+/* Aplicar estilos a el atributo class */
+
+[class^="icon-"]{
+    font-size:5vmin;
+    float: right;
+    /*color: red;*/
+}
+
+.icon-arrow-up{
+    color: #5db8f8;
+    margin-left: 2rem;
+    float: left;
+    text-decoration: none;
+    font-size: 5vmin;
+}
+
+
+/* Aplicar estilos al pie */
+
+.burbujas{
+    text-align: center;
+}
+
+.burbujaall img{
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.burbujas p{
+    font-size: 1.5vw;
+}
