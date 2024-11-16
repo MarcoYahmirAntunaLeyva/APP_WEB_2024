@@ -1,0 +1,270 @@
+/* Aplicar estilos */
+
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: sans-serif;
+   text-decoration: none;
+}
+
+p,h1,h2{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+ul,ol{
+   margin-left: 20px;
+}
+
+body{
+   background-color: #555151;
+}
+
+/* Estilos cabecera */
+
+header{
+  width: 1212px;
+  height: 140px;
+  background-color: #2ba977;
+  border: 1px solid #333;
+  margin: 0px auto;
+}
+
+#logotipo{
+   width: 45%;
+   height: 130px;
+   margin: 0 auto;
+   padding-top: 10px;
+}
+
+#logotipo img{
+   display: block;
+   width: 60px;
+   float: left;
+   margin-top: 20px;
+}
+
+#logotipo h1{
+   display: block;
+   float: left;
+   letter-spacing: 2px;
+   margin-top: 40px;
+   margin-left: 20px;
+   font-weight: bolder;
+   color: white;
+}
+
+/* Estilos Barra de navegacion */
+
+nav{
+   width: 1250px;
+   height: 40px;
+   background-color: #1b1e1f;
+   border: 1px solid #333333;
+   margin:0 auto;
+   box-shadow: 0px 22px 22px gray;
+   font-size: 15px;
+}
+
+nav > ul{
+   text-decoration: none;
+   list-style: none;
+}
+
+nav > ul > li{
+   line-height: 40px;
+   float: left;
+
+}
+
+nav > ul > li > a{
+   color:#d1d4d6;
+   display: block;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+nav > ul > li > a:hover{
+   background-color:#2ba977 ;
+   box-shadow: 0px 0px 5px #444 inset;
+   color: white;
+   transition: all 300ms;
+}
+
+nav > ul > li > ul{
+   display: none;
+   position: absolute;
+   color: white;
+   text-align: left;
+   width: 160px;
+   box-shadow: 0px 2px 2px gray;
+}
+
+nav > ul > li:hover > ul{
+   display: block;
+   color: white;
+   margin: 0px;
+   list-style: none;
+}
+
+nav > ul > li:hover > ul li{
+   background-color: #f2f1f0;
+   border-bottom: 1px solid #666;
+   padding: 8px;
+   line-height: 25px;
+   font-size: 13px;
+   transition: all 300ms;
+}
+
+nav > ul > li:hover > ul li a{
+   color: #666;
+   transition: all 300ms;
+}
+
+nav > ul > li:hover > ul li:hover{
+   background-color: #2ba977;
+   font-weight: bold;
+
+}
+
+nav > ul > li:hover > ul li:hover a{
+   display: block;
+   color:white; 
+   font-size: 14px;
+   transition: all 300ms; 
+}
+
+/* Estilos contenido central  */
+
+.title{
+   color:#444;
+   letter-spacing: 1px;
+   font-size: 30px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+.date{
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   color: gray;;
+   text-align: right;
+}
+
+
+
+#content{
+   width: 1211px;
+   min-height:930px ;
+   margin: 0 auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   text-align: justify;
+   line-height: 20px;
+}
+
+.box{
+   background-color: white;
+   width: 95%;
+   min-height: 930px;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 20px;
+   margin: 0 auto;
+}
+
+.box .image{
+   width: 45%;
+   float: left;
+   margin-right: 40px;
+
+}
+
+.box .image img{
+   width: 100%
+}
+
+.box a{
+   color: #444;
+   transition: all 300ms;
+
+}
+
+.box a:hover{
+   color: #2ba977;
+}
+
+.box form{
+   width: 80%;
+}
+
+
+.box form input,
+.box form label{
+   display: block;
+   padding: 5px;
+   padding-left: 0;
+   margin-bottom: 5px;
+   font-size: 1rem;
+   font-style: bold;
+   text-decoration: underline;
+   color: black;
+}
+
+.box form input[type="text"],
+.box form input[type="email"],
+.box form input[type="password"],
+.box form textarea,
+.box form select
+{
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.box form select
+{
+   width: 100px;
+}
+
+.message, 
+.alert-success{
+   padding: 20px;
+   background-color: #2ba977;
+   color: white;
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 2rem;
+}
+
+.alert-warning{
+   padding: 20px;
+   background-color: red;
+   color: white;
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 2rem;
+}
+
+.title{
+   color: #444;
+   letter-spacing: 1px;
+   font-size: 30px;
+   padding-bottom: 50px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+/* Estilos al Footer */
+
+footer{
+   width: 1250px;
+   background-color: #2ba977;
+   border: 1px solid #333;
+   color: white;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   box-shadow: 0px 0px 20px gray;
+   margin: 0 auto;
+}
