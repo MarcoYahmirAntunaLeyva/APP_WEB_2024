@@ -1,0 +1,24 @@
+{% extends "layouts/layouts.html" %}
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+{% block content %}
+    <h1 class="title">{{title}}</h1>
+    <hr>
+    <h1 align="center">Listado</h1> <hr>
+    {% for categoria in categorias %}
+        <article class="article-item">
+            <div class="data">
+            <h2>{{categoria.name}}</h2>
+            <p>Descripción: {{categoria.description}}</p>
+            <span class="date">
+                {{categoria.created_at}}
+            </span>
+            <hr>
+            </div>
+            <div class="clearfix"></div>
+        </article>
+    {% endfor %}
+{% endblock %}
