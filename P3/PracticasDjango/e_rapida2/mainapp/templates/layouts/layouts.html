@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Inicio|Django Proyecto UTD
+    </title>
+    <link rel="stylesheet" href="{% static "css/estilos.css" %}" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="logotipo">
+            <img src="{% static "img/logodjango.png" %}" alt="Imagen Django" title="Django">
+            <h1>Evaluacion_Rapida_1</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url "inicio" %}">Inicio</a></li>
+            <li><a href="{% url "mision" %}">Mision</a></li>
+            <li><a href="{% url "vision" %}">Vision</a></li>
+            <li><a href="{% url "acercade" %}">Acerca de</a></li>
+            <li><a href="{% url "registro" %}">Registro</a></li>
+            <li><a href="{% url "inicio_s" %}">Inicio de Sesión</a></li>
+
+
+        </ul>
+    </nav>
+    <section id="content">
+       <div class="box">
+          {% block content %}
+
+          {% endblock content %}
+       </div>
+    </section>
+    <footer>
+        <p>Django con Yahmline &copy; 2024 | Visitado el: {% now "Y-m-d" %}</p>
+    </footer>
+</body>
+</html>
